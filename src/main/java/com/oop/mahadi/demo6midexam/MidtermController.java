@@ -168,7 +168,7 @@ public float updateVapprice(float f){
     }
     @FXML
     void initialize() {
-        showFromBin2(arrComputerlist);
+        load_from_BinFile(arrComputerlist,"x.bin");
         com4modl.getItems().addAll("samsung s1","apple m1","samsung s11","apple m11","samsung s12","apple m12","mokoa 12--","nokia 1300");
         com1brand.getItems().addAll("samsung","apple","nokia");
 
@@ -234,7 +234,7 @@ public float updateVapprice(float f){
                     while (true) {
                         Computer c = (Computer) obfs.readObject();
                         // Display the object, for example, using System.out.println
-                        System.out.println(c.toString());
+//                        System.out.println(c.toString());
                         // Optionally, add the object to a list or update the UI
                         ccc.add(c);
                     }
@@ -277,9 +277,9 @@ public float updateVapprice(float f){
 
 
     @FXML
-    public void showFromBin2(ArrayList<Computer> com) {
+    public void load_from_BinFile(ArrayList<Computer> com,String fileName) {
 
-        File f = new File("x.bin");
+        File f = new File(fileName);
         ArrayList<Computer> ccc=new ArrayList<>();
 
         if (f.exists()) {
