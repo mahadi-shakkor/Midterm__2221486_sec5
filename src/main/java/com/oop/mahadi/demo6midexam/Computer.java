@@ -1,6 +1,8 @@
 package com.oop.mahadi.demo6midexam;
 
-public class Computer {
+import java.io.Serializable;
+
+public class Computer implements Serializable {
     int serialNo;
     String brand,model;
     float price;

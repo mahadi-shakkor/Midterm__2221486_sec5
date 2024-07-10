@@ -45,5 +45,7 @@
       <ComboBox fx:id="com4modl" layoutX="79.0" layoutY="107.0" prefWidth="150.0" />
       <ComboBox fx:id="com3brand" layoutX="72.0" layoutY="66.0" prefWidth="150.0" />
       <Label layoutX="138.0" layoutY="301.0" prefHeight="17.0" prefWidth="273.0" text="Showing in table " />
+      <Button layoutX="540.0" layoutY="78.0" mnemonicParsing="false" onAction="#saveToBin" text="Save to bin " />
+      <Button layoutX="537.0" layoutY="142.0" mnemonicParsing="false" onAction="#showFromBin" text="Show from bin " />
    </children>
 </AnchorPane>
